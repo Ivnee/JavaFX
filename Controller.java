@@ -21,7 +21,7 @@ public class Controller {
     public TextField in;
 
     public void Send(ActionEvent actionEvent) {
-        out.appendText(Name.getText() + ": \n" + in.getText() + " \n" );
+        out.appendText(Name.getText() + ":  \n" + in.getText() + " \n" );
         in.setText("");
     }
 

@@ -7,10 +7,10 @@
 <BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HW.Controller">
     <top>
         <HBox>
-            <Label text="Введите имя:     "/>
+            <Label text="Введите имя:     " />
             <TextField fx:id="Name" text="Zel">
                 <font>
-                    <Font name="System Italic" size="14" />
+                    <Font name="System Italic" size="13" />
                 </font>
             </TextField>
         </HBox>
@@ -24,7 +24,7 @@
     <bottom>
         <HBox>
             <Button defaultButton="true" onAction="#Send" text="Send" />
-            <Button onAction="#Delete" text="Delete" />
+            <Button cancelButton="true" onAction="#Delete" text="Delete" />
         </HBox>
     </bottom>
 
