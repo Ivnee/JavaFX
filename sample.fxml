@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HW.Controller">
+    <top>
+        <HBox>
+            <Label text="Введите имя:     "/>
+            <TextField fx:id="Name" text="Zel">
+                <font>
+                    <Font name="System Italic" size="14" />
+                </font>
+            </TextField>
+        </HBox>
+    </top>
+    <center>
+        <VBox>
+            <TextArea fx:id="out" editable="false" />
+            <TextField fx:id="in" prefHeight="50" />
+        </VBox>
+    </center>
+    <bottom>
+        <HBox>
+            <Button defaultButton="true" onAction="#Send" text="Send" />
+            <Button onAction="#Delete" text="Delete" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
