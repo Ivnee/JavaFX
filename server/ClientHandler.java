@@ -49,6 +49,7 @@ public class ClientHandler {
                     //цикл работы
                     while (true) {
                         String str = in.readUTF();
+                        //не смог сделать игнор (/pm + nick)
                         if(str.startsWith("/pm")){
                             String name = str.split(" ")[1];
                             server.sendPM(this,name,str);
