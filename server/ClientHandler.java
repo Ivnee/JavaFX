@@ -31,7 +31,11 @@ public class ClientHandler {
 
             new Thread(() -> {
                 try {
+
+
                     socket.setSoTimeout(120000);
+
+                    
                     //цикл аутентификации
                     while (true) {
                         String str = in.readUTF();
@@ -66,7 +70,11 @@ public class ClientHandler {
                                     nick = newNick;
                                     server.subscribe(this);
                                     System.out.println("Клиент " + nick + " прошел аутентификацию");
+
+
                                     socket.setSoTimeout(0);
+
+
                                     break;
                                 } else {
                                     sendMsg("С этим логином уже авторизовались");
